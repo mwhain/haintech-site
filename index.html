@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HainTech | IT Support for Sarasota CPA Firms &amp; Small Businesses</title>
+<meta name="description" content="On-site and remote IT support for accounting firms and small businesses in Sarasota, Venice and Bradenton since 1998. Microsoft 365, networks, firewalls, security and backups.">
+<link rel="canonical" href="https://haintech.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HainTech | IT Support for Sarasota CPA Firms & Small Businesses">
+<meta property="og:description" content="On-site and remote IT support in Sarasota, Venice and Bradenton since 1998.">
+<meta property="og:url" content="https://haintech.com/">
+<meta property="og:image" content="https://haintech.com/img/og.jpg">
+<meta name="theme-color" content="#0b1a2e">
+<link rel="icon" type="image/svg+xml" href="img/mark.svg">
+<link rel="preload" as="image" href="img/hero-drawbridge.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "HainTech",
+  "url": "https://haintech.com/",
+  "logo": "https://haintech.com/img/logo-dark.png",
+  "image": "https://haintech.com/img/og.jpg",
+  "email": "mike@haintech.com",
+  "foundingDate": "1998",
+  "founder": { "@type": "Person", "name": "Mike Hain" },
+  "description": "On-site and remote IT support for accounting firms and small businesses.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Sarasota", "addressRegion": "FL", "addressCountry": "US" },
+  "areaServed": ["Sarasota, FL", "Venice, FL", "Bradenton, FL", "Lakewood Ranch, FL"],
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "sameAs": ["https://www.facebook.com/HainTech"]
+}
+</script>
+<style>
+  :root {
+    --navy: #0b1a2e;
+    --navy-2: #121f3d;
+    --brand: #3e4589;       /* logo blue */
+    --brand-ink: #1a181d;   /* logo black */
+    --accent: #6f7fe6;      /* brand blue, lifted for dark backgrounds */
+    --accent-hi: #8f9cf0;
+    --ok: #3ccf91;
+    --warn: #f3b33d;
+    --ink: #17202b;
+    --muted: #5a6776;
+    --line: #e3e8ee;
+    --bg: #ffffff;
+    --bg-alt: #f4f6fb;
+    --radius: 14px;
+    --max: 1140px;
+    --head: "Saira", system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink); background: var(--bg); line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: var(--head); font-weight: 700; letter-spacing: -.2px; }
+  a { color: var(--brand); }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+  /* Header */
+  header.top {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(11, 26, 46, .94);
+    backdrop-filter: saturate(140%) blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,.07);
+  }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .brand img { height: 48px; width: auto; display: block; }
+  nav.links { display: flex; gap: 26px; }
+  nav.links a { color: #c9d3ea; text-decoration: none; font-size: 15px; }
+  nav.links a:hover { color: #fff; }
+  .cta-sm { background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; padding: 9px 16px; border-radius: 999px; font-size: 14px; }
+  .cta-sm:hover { background: var(--accent-hi); }
+
+  /* Hero */
+  .hero {
+    position: relative; color: #fff; overflow: hidden;
+    background: var(--navy) url("img/hero-drawbridge.jpg") center 40% / cover no-repeat;
+    background-image: image-set(url("img/hero-drawbridge.webp") type("image/webp"), url("img/hero-drawbridge.jpg") type("image/jpeg"));
+    padding: 84px 0 92px;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(11,26,46,.94) 0%, rgba(11,26,46,.78) 42%, rgba(11,26,46,.30) 100%),
+      linear-gradient(180deg, rgba(11,26,46,0) 55%, rgba(11,26,46,.7) 100%);
+  }
+  .hero .wrap { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; }
+  .eyebrow { color: var(--accent-hi); font-weight: 600; letter-spacing: 1.6px; text-transform: uppercase; font-size: 13px; margin: 0 0 14px; font-family: var(--head); }
+  .hero h1 { font-size: clamp(36px, 5vw, 58px); line-height: 1.05; margin: 0 0 20px; }
+  .hero p.lead { font-size: clamp(17px, 1.9vw, 19.5px); color: #d3dbee; max-width: 560px; margin: 0 0 32px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 14px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 10px;
+    font-weight: 600; text-decoration: none; font-size: 16px; border: 0; cursor: pointer; font-family: inherit;
+    transition: transform .08s ease, background .15s ease;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-hi); }
+  .btn-ghost { color: #fff; border: 1px solid rgba(255,255,255,.3); background: transparent; }
+  .btn-ghost:hover { background: rgba(255,255,255,.08); }
+  .btn svg { width: 18px; height: 18px; }
+  .facts { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 40px; color: #aebbd6; font-size: 15px; }
+  .facts div { display: flex; align-items: center; gap: 8px; }
+  .facts svg { width: 18px; height: 18px; color: var(--accent-hi); flex: none; }
+
+  /* Terminal */
+  .term {
+    background: rgba(8, 14, 26, .88); border: 1px solid rgba(143,156,240,.25); border-radius: 12px;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,.6); overflow: hidden; font-family: var(--mono); font-size: 13.5px;
+  }
+  .term-bar { display: flex; align-items: center; gap: 7px; padding: 10px 14px; background: rgba(255,255,255,.04); border-bottom: 1px solid rgba(255,255,255,.06); }
+  .term-bar i { width: 11px; height: 11px; border-radius: 50%; background: #3a4560; display: block; }
+  .term-bar span { margin-left: 8px; color: #7f8db0; font-size: 12px; }
+  .term-body { padding: 16px 16px 18px; min-height: 290px; color: #cdd6f0; white-space: pre-wrap; word-break: break-word; }
+  .term-body .p { color: var(--accent-hi); }
+  .term-body .ok { color: var(--ok); }
+  .term-body .warn { color: var(--warn); }
+  .term-body .dim { color: #7f8db0; }
+  .cursor { display: inline-block; width: 8px; height: 15px; background: var(--accent-hi); vertical-align: -2px; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .term-note { font-size: 12px; color: #8b98b8; margin-top: 10px; text-align: right; font-family: var(--mono); }
+
+  /* Sections */
+  section { padding: 84px 0; }
+  section.alt { background: var(--bg-alt); }
+  .sec-head { max-width: 680px; margin-bottom: 44px; }
+  .sec-head h2 { font-size: clamp(28px, 3.4vw, 40px); line-height: 1.12; margin: 0 0 12px; }
+  .sec-head p { color: var(--muted); font-size: 17px; margin: 0; }
+  .sec-head .eyebrow { color: var(--brand); }
+
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 24px; transition: border-color .15s, box-shadow .15s; }
+  .card:hover { border-color: #c9cff0; box-shadow: 0 10px 30px -18px rgba(62,69,137,.45); }
+  .card .ic { width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; background: rgba(62,69,137,.1); color: var(--brand); margin-bottom: 16px; }
+  .card .ic svg { width: 22px; height: 22px; }
+  .card h3 { margin: 0 0 8px; font-size: 19px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+
+  /* Accounting split */
+  .split { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+  .split > *, .contact-grid > *, .about > * { min-width: 0; }
+  .split h2 { font-size: clamp(28px, 3.4vw, 40px); line-height: 1.12; margin: 0 0 16px; }
+  .split p { color: var(--muted); font-size: 17px; }
+  ul.checks { list-style: none; padding: 0; margin: 22px 0 0; }
+  ul.checks li { position: relative; padding-left: 32px; margin: 0 0 12px; font-size: 16px; }
+  ul.checks li::before {
+    content: ""; position: absolute; left: 0; top: 3px; width: 20px; height: 20px; border-radius: 50%;
+    background: var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/13px no-repeat;
+  }
+  .panel { background: var(--navy); color: #fff; border-radius: 18px; padding: 34px 30px; background-image: radial-gradient(500px 240px at 100% 0%, rgba(111,127,230,.28), transparent 60%); }
+  .panel h3 { margin: 0 0 18px; font-size: 18px; color: #c9d3ea; font-weight: 600; }
+  .cal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .cal div { border-radius: 8px; padding: 12px 6px; text-align: center; font-size: 13px; background: rgba(255,255,255,.06); color: #9fadcc; }
+  .cal div b { display: block; color: #fff; font-size: 15px; margin-bottom: 2px; font-family: var(--head); }
+  .cal .busy { background: rgba(111,127,230,.24); color: #d6dcff; }
+  .panel .note { margin: 18px 0 0; font-size: 14px; color: #9fadcc; }
+
+  /* Checkup */
+  .checkup { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: start; }
+  .q { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-bottom: 12px; display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: center; }
+  .q p { margin: 0; font-size: 15.5px; }
+  .q small { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .seg button { border: 0; background: #fff; padding: 7px 13px; font: 600 13px system-ui, sans-serif; color: var(--muted); cursor: pointer; }
+  .seg button + button { border-left: 1px solid var(--line); }
+  .seg button[aria-pressed="true"][data-v="2"] { background: #e6f8ef; color: #12804f; }
+  .seg button[aria-pressed="true"][data-v="1"] { background: #fff4dc; color: #a06800; }
+  .seg button[aria-pressed="true"][data-v="0"] { background: #fde8e8; color: #b42318; }
+  .score { position: sticky; top: 92px; background: var(--navy); color: #fff; border-radius: 18px; padding: 30px 28px; background-image: radial-gradient(420px 220px at 100% 0%, rgba(111,127,230,.3), transparent 60%); }
+  .gauge { position: relative; width: 170px; height: 170px; margin: 4px auto 18px; }
+  .gauge svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .gauge .val { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; }
+  .gauge .val b { font-family: var(--head); font-size: 44px; line-height: 1; display: block; }
+  .gauge .val span { font-size: 12px; color: #9fadcc; letter-spacing: 1px; text-transform: uppercase; }
+  .score h3 { margin: 0 0 6px; font-size: 20px; text-align: center; }
+  .score .sub { text-align: center; color: #b7c2dc; font-size: 14.5px; margin: 0 0 18px; }
+  .score ul { margin: 0 0 20px; padding-left: 18px; color: #d3dbee; font-size: 14.5px; }
+  .score ul li { margin-bottom: 6px; }
+  .score .btn { width: 100%; justify-content: center; }
+  .score .fine { font-size: 12px; color: #8b98b8; margin: 12px 0 0; text-align: center; }
+
+  /* About */
+  .about { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: center; }
+  .idcard { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 30px; box-shadow: 0 20px 50px -30px rgba(26,24,29,.35); }
+  .idcard img { width: 100%; max-width: 300px; height: auto; display: block; margin-bottom: 22px; }
+  .idcard h3 { margin: 0; font-size: 22px; }
+  .idcard .role { color: var(--brand); font-weight: 600; margin: 2px 0 18px; }
+  .idcard dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14.5px; }
+  .idcard dt { color: var(--muted); }
+  .idcard dd { margin: 0; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 30px; }
+  .stats div b { font-family: var(--head); font-size: 34px; color: var(--brand); display: block; line-height: 1.1; }
+  .stats div span { color: var(--muted); font-size: 14.5px; }
+
+  /* Contact */
+  .contact { background: linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%); color: #fff; }
+  .contact .sec-head p { color: #c9d3ea; }
+  .contact-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 40px; align-items: start; }
+  .info { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius); padding: 26px; }
+  .info dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 12px 18px; font-size: 15.5px; }
+  .info dt { color: #9fadcc; }
+  .info dd { margin: 0; }
+  .info a { color: #fff; }
+
+  footer { background: #070f1c; color: #7f8db0; font-size: 14px; padding: 26px 0; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
+  footer img { height: 30px; width: auto; opacity: .9; }
+
+  @media (max-width: 960px) {
+    .hero .wrap, .split, .contact-grid, .checkup, .about { grid-template-columns: 1fr; gap: 36px; }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    nav.links { display: none; }
+    .score { position: static; }
+  }
+  @media (max-width: 560px) {
+    .grid, .stats { grid-template-columns: 1fr; }
+    section { padding: 64px 0; }
+    .hero { padding: 56px 0 64px; }
+    .btn { width: 100%; justify-content: center; }
+    .cta-sm { display: none; }
+    .brand img { height: 36px; }
+    .cal { grid-template-columns: repeat(3, 1fr); }
+    .panel { padding: 26px 18px; }
+    .q { grid-template-columns: 1fr; }
+    .term { font-size: 12px; }
+    .term-body { min-height: 300px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="HainTech home"><img src="img/logo-light.png" alt="HainTech" width="640" height="234"></a>
+    <nav class="links" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#accounting">Accounting firms</a>
+      <a href="#checkup">Security checkup</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="cta-sm" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Sarasota &middot; Venice &middot; Bradenton</p>
+        <h1>Your IT department, without the overhead.</h1>
+        <p class="lead">On-site and remote IT support for accounting firms and small businesses on Florida&rsquo;s Suncoast, since 1998. One person who knows your setup, answers your email, and shows up.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="mailto:mike@haintech.com?subject=IT%20help%20request">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            Email Mike
+          </a>
+          <a class="btn btn-ghost" href="#checkup">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            Take the 2-minute security checkup
+          </a>
+        </div>
+        <div class="facts">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Mon&ndash;Fri, 9&ndash;5</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>On-site across Sarasota &amp; Manatee</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/></svg>Security-first since 1998</div>
+        </div>
+      </div>
+      <div>
+        <div class="term" role="img" aria-label="Example of an automated morning health check for a client office">
+          <div class="term-bar"><i></i><i></i><i></i><span>haintech &mdash; morning-check</span></div>
+          <div class="term-body" id="term"></div>
+        </div>
+        <p class="term-note">Illustration of a daily check &middot; sample data</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Services</p>
+        <h2>What we handle</h2>
+        <p>Everything a small office depends on, from the firewall to the last workstation, managed by someone who has seen it all before.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+          <h3>Microsoft 365 &amp; email</h3>
+          <p>Exchange Online, Outlook, Teams and OneDrive. Setup, migrations, licensing, mailbox and calendar problems solved.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="14" width="20" height="7" rx="2"/><path d="M6 17.5h.01M10 17.5h.01M12 14V9M8 6a5.6 5.6 0 0 1 8 0M5 3.5a9.6 9.6 0 0 1 14 0"/></svg></div>
+          <h3>Networks &amp; firewalls</h3>
+          <p>SonicWall firewalls, Wi&#8209;Fi, VPN for remote staff, and dual-internet failover so the office stays online.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+          <h3>Servers &amp; workstations</h3>
+          <p>Windows domain and file-server administration, new PC setup, upgrades, repairs, printers and scanners.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Security &amp; compliance</h3>
+          <p>Multi-factor authentication, phishing awareness, and written information security plans (WISP) for the FTC Safeguards Rule.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></div>
+          <h3>Backup &amp; recovery</h3>
+          <p>Backups that are actually tested, plus a recovery plan for the day a drive dies or ransomware hits.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M16 11v6"/></svg></div>
+          <h3>Tax &amp; accounting software</h3>
+          <p>CCH ProSystem fx installs, release updates and permissions, plus the workstations and scanners your tax team relies on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="accounting" class="alt">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow" style="color:var(--brand)">Accounting &amp; tax practices</p>
+        <h2>IT that works around tax season, not through it.</h2>
+        <p>We&rsquo;ve supported accounting practices for decades. We know the software, the compliance rules, and what January through April feels like inside a CPA office.</p>
+        <ul class="checks">
+          <li>CCH ProSystem fx updates scheduled around your deadlines</li>
+          <li>FTC Safeguards Rule: WISP, MFA, and a designated Qualified Individual</li>
+          <li>Client data protected with tested backups and access controls</li>
+          <li>Scan-to-folder, copiers and remote access that just work</li>
+        </ul>
+      </div>
+      <div class="panel" aria-hidden="true">
+        <h3>How we plan the year</h3>
+        <div class="cal">
+          <div class="busy"><b>Jan</b>Hands off</div>
+          <div class="busy"><b>Feb</b>Hands off</div>
+          <div class="busy"><b>Mar</b>Hands off</div>
+          <div class="busy"><b>Apr</b>Hands off</div>
+          <div><b>May</b>Upgrades</div>
+          <div><b>Jun</b>Projects</div>
+          <div><b>Jul</b>Security</div>
+          <div><b>Aug</b>Hardware</div>
+          <div class="busy"><b>Sep</b>Extensions</div>
+          <div class="busy"><b>Oct</b>Extensions</div>
+          <div><b>Nov</b>Year-end prep</div>
+          <div><b>Dec</b>Season ready</div>
+        </div>
+        <p class="note">Big changes happen in the off-season. During crunch time, the goal is zero surprises.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="checkup">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Free self-assessment</p>
+        <h2>The 2-minute small-office security checkup</h2>
+        <p>Eight questions we ask every new client. Answer honestly; nothing you click leaves this page.</p>
+      </div>
+      <div class="checkup">
+        <div id="qs"></div>
+        <aside class="score" aria-live="polite">
+          <div class="gauge">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="12"/>
+              <circle id="arc" cx="60" cy="60" r="52" fill="none" stroke="#8f9cf0" stroke-width="12" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7" style="transition:stroke-dashoffset .5s ease, stroke .3s"/>
+            </svg>
+            <div class="val"><div><b id="pct">&ndash;</b><span id="answered">0 of 8 answered</span></div></div>
+          </div>
+          <h3 id="grade">Answer a few questions</h3>
+          <p class="sub" id="gradeSub">Your score updates as you go.</p>
+          <ul id="tips"></ul>
+          <a class="btn btn-primary" id="sendResults" href="mailto:mike@haintech.com?subject=Security%20checkup">Email Mike about my results</a>
+          <p class="fine">Opens your own email app with your answers filled in. Nothing is sent until you hit send.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="alt">
+    <div class="wrap about">
+      <div class="idcard">
+        <img src="img/logo-dark.png" alt="HainTech logo" width="640" height="234">
+        <h3>Mike Hain, MCSE</h3>
+        <p class="role">Owner &amp; Lead Technician</p>
+        <dl>
+          <dt>Based in</dt><dd>Sarasota, Florida</dd>
+          <dt>Serving</dt><dd>Sarasota &amp; Manatee counties</dd>
+          <dt>Since</dt><dd>1998</dd>
+          <dt>Email</dt><dd><a href="mailto:mike@haintech.com">mike@haintech.com</a></dd>
+        </dl>
+      </div>
+      <div>
+        <div class="sec-head" style="margin-bottom:0">
+          <p class="eyebrow">About</p>
+          <h2>No call center. No ticket queue. Just Mike.</h2>
+          <p>HainTech is a one-person IT practice on purpose. When you call for help, you get the person who built your network, knows which workstation runs the tax software, and remembers why that firewall rule exists. Clear explanations, honest recommendations, and no upselling.</p>
+        </div>
+        <div class="stats">
+          <div><b id="yrs">28</b><span>years in business</span></div>
+          <div><b>1</b><span>person who knows your setup</span></div>
+          <div><b>0</b><span>ticket queues to wait in</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <div class="sec-head">
+          <h2>Let&rsquo;s talk about your office.</h2>
+          <p>Send a quick note about what&rsquo;s going on: a problem that needs fixing, a project you&rsquo;re planning, or a second opinion on your setup. You&rsquo;ll hear back promptly, usually the same day.</p>
+        </div>
+        <div class="btns">
+          <a class="btn btn-primary" href="mailto:mike@haintech.com?subject=IT%20help%20request">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            mike@haintech.com
+          </a>
+          <a class="btn btn-ghost" href="https://m.me/HainTech" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+            Message on Facebook
+          </a>
+        </div>
+      </div>
+      <div class="info">
+        <dl>
+          <dt>Hours</dt><dd>Monday&ndash;Friday, 9:00&ndash;5:00</dd>
+          <dt>Service area</dt><dd>Sarasota, Venice, Bradenton, Lakewood Ranch</dd>
+          <dt>Email</dt><dd><a href="mailto:mike@haintech.com">mike@haintech.com</a></dd>
+          <dt>Facebook</dt><dd><a href="https://www.facebook.com/HainTech" target="_blank" rel="noopener">facebook.com/HainTech</a></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo-light.png" alt="HainTech" width="640" height="234">
+    <span>&copy; <span id="yr">2026</span> HainTech &middot; Sarasota, Florida &middot; IT support since 1998</span>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const now = new Date();
+  document.getElementById('yr').textContent = now.getFullYear();
+  document.getElementById('yrs').textContent = now.getFullYear() - 1998;
+
+  /* ---------- Terminal: example morning check ---------- */
+  const term = document.getElementById('term');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const pad = (s, n) => (s + ' '.repeat(n)).slice(0, n);
+  const t = now.toTimeString().slice(0, 5);
+  const script = [
+    ['p', '$ ', 'cmd', 'haintech-check --site office --all'],
+    ['dim', `[${t}] starting 6 checks...`],
+    ['ok', '  ✔ ', 'txt', pad('firewall', 13) + 'SonicWall up · threat prevention on'],
+    ['ok', '  ✔ ', 'txt', pad('internet', 13) + 'primary 4ms · failover ready'],
+    ['ok', '  ✔ ', 'txt', pad('backups', 13) + 'nightly OK · test restore passed'],
+    ['ok', '  ✔ ', 'txt', pad('m365', 13) + 'MFA enforced · 0 risky sign-ins'],
+    ['warn', '  ! ', 'txt', pad('patching', 13) + '2 PCs need reboot → tonight 7pm'],
+    ['ok', '  ✔ ', 'txt', pad('certificates', 13) + 'none expiring within 30 days'],
+    ['dim', ''],
+    ['p', '$ ', 'cmd', 'summary'],
+    ['txt', '5 healthy · 1 handled · 0 need you'],
+    ['ok', 'Your office is ready for the day.']
+  ];
+  const esc = s => s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  function render(lines, cursor) {
+    term.innerHTML = lines.join('\n') + (cursor ? '<span class="cursor"></span>' : '');
+  }
+  function lineHTML(item) {
+    let html = '';
+    for (let i = 0; i < item.length; i += 2) {
+      const cls = item[i], txt = item[i + 1] ?? '';
+      html += (cls === 'txt' || cls === 'cmd') ? esc(txt) : `<span class="${cls}">${esc(txt)}</span>`;
+    }
+    return html;
+  }
+  if (reduce) { render(script.map(lineHTML), false); }
+  else {
+    let done = [];
+    const sleep = ms => new Promise(r => setTimeout(r, ms));
+    (async function run() {
+      while (true) {
+        done = [];
+        for (const item of script) {
+          if (item[2] === 'cmd') {
+            const prefix = `<span class="${item[0]}">${esc(item[1])}</span>`;
+            for (let k = 1; k <= item[3].length; k++) {
+              render([...done, prefix + esc(item[3].slice(0, k))], true);
+              await sleep(38 + Math.random() * 40);
+            }
+            done.push(prefix + esc(item[3]));
+            await sleep(350);
+          } else {
+            done.push(lineHTML(item));
+            render(done, true);
+            await sleep(item[0] === 'dim' ? 300 : 520);
+          }
+        }
+        await sleep(6500);
+      }
+    })();
+  }
+
+  /* ---------- Security checkup ---------- */
+  const Q = [
+    ['Is multi-factor authentication (MFA) on for every email account?', 'Including the owner and any shared mailboxes.', 'Turn on MFA for every mailbox. Stolen passwords are still the #1 way in.'],
+    ['Have you restored a file from backup in the last 90 days?', 'A backup you have never tested is a guess.', 'Schedule a test restore. Untested backups fail when you need them most.'],
+    ['Is at least one backup copy offline or immutable?', 'Something ransomware cannot reach or encrypt.', 'Add an offline or immutable copy so ransomware cannot take your backups too.'],
+    ['Do you have a written information security plan (WISP)?', 'Required for tax preparers under the FTC Safeguards Rule.', 'Write (or update) your WISP. Tax and accounting firms are required to have one.'],
+    ['Are Windows updates applied within about two weeks?', 'On every PC and server, not just the ones people complain about.', 'Get patching on a schedule. Most attacks use holes that already have fixes.'],
+    ['Does every former employee lose access the day they leave?', 'Email, VPN, cloud apps and shared passwords.', 'Make an offboarding checklist and run it on the person’s last day.'],
+    ['Is your firewall under support with security services active?', 'Firmware current and threat prevention licensed.', 'Renew firewall support and update firmware. An expired box is just a router.'],
+    ['Has your staff had phishing awareness training this year?', 'Even a short session cuts click rates dramatically.', 'Run a short phishing awareness session; it is the cheapest control you have.']
+  ];
+  const ans = new Array(Q.length).fill(null);
+  const qs = document.getElementById('qs');
+  Q.forEach((q, i) => {
+    const el = document.createElement('div');
+    el.className = 'q';
+    el.innerHTML = `<p>${q[0]}<small>${q[1]}</small></p>
+      <div class="seg" role="group" aria-label="Answer">
+        <button type="button" data-v="2" aria-pressed="false">Yes</button>
+        <button type="button" data-v="1" aria-pressed="false">Not sure</button>
+        <button type="button" data-v="0" aria-pressed="false">No</button>
+      </div>`;
+    el.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+      ans[i] = +b.dataset.v;
+      el.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+      update();
+    }));
+    qs.appendChild(el);
+  });
+  const arc = document.getElementById('arc'), C = 326.7;
+  function update() {
+    const answered = ans.filter(a => a !== null).length;
+    const pts = ans.reduce((s, a) => s + (a ?? 0), 0);
+    const pct = answered ? Math.round(pts / (answered * 2) * 100) : 0;
+    document.getElementById('answered').textContent = `${answered} of ${Q.length} answered`;
+    document.getElementById('pct').textContent = answered ? pct : '–';
+    arc.style.strokeDashoffset = C - C * (answered ? pct / 100 : 0);
+    arc.style.stroke = pct >= 85 ? '#3ccf91' : pct >= 60 ? '#f3b33d' : '#ff6b6b';
+    let g = 'Answer a few questions', s = 'Your score updates as you go.';
+    if (answered) {
+      if (pct >= 85) { g = 'Solid foundation'; s = 'Better than most small offices. Worth a second set of eyes on the gaps.'; }
+      else if (pct >= 60) { g = 'Some real gaps'; s = 'A few fixes would close the most common ways small offices get hit.'; }
+      else { g = 'At risk'; s = 'These are the gaps attackers look for first. Let’s fix them in priority order.'; }
+    }
+    document.getElementById('grade').textContent = g;
+    document.getElementById('gradeSub').textContent = s;
+    const tips = Q.map((q, i) => (ans[i] !== null && ans[i] < 2) ? q[2] : null).filter(Boolean).slice(0, 3);
+    document.getElementById('tips').innerHTML = tips.map(x => `<li>${x}</li>`).join('');
+    const lines = Q.map((q, i) => `- ${q[0]} ${ans[i] === 2 ? 'Yes' : ans[i] === 1 ? 'Not sure' : ans[i] === 0 ? 'No' : '(skipped)'}`);
+    const body = `Hi Mike,\n\nI took the security checkup on haintech.com and scored ${answered ? pct : '-'}/100.\n\n${lines.join('\n')}\n\nCan we talk about the gaps?\n`;
+    document.getElementById('sendResults').href = `mailto:mike@haintech.com?subject=${encodeURIComponent('Security checkup results')}&body=${encodeURIComponent(body)}`;
+  }
+  update();
+})();
+</script>
+</body>
+</html>
